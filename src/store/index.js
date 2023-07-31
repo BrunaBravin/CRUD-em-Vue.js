@@ -22,8 +22,6 @@ export const store = createStore({
 
     mutations: {    // mecanismos/métodos para alteras os estados de maneira síncrona
 
-
-
       salvar_cadastro(state){
 
         var data = {
@@ -48,10 +46,13 @@ export const store = createStore({
       },
 
       editar_cadastro(state, cadastro){
-        //console.log("cadastro a ser editado: ", cadastro)
+        // console.log("cadastro a ser editado: ", cadastro)
+        // console.log("index do cadastro a ser editado: ", state.index)
         state.index = state.arrCadastro.indexOf(state.arrCadastro.find(arrcad => arrcad.id == cadastro.id))
         state.cadEditar = cadastro;
-        state.incluir = true;     
+        state.incluir = true;   
+        console.log("cadastro a ser editado: ", cadastro)
+        console.log("index do cadastro a ser editado: ", state.index)  
       },
 
       verificacao_selecionados(state){

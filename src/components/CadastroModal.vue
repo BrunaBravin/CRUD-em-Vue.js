@@ -83,7 +83,7 @@ export default {
     }
   },
   created(){
-    console.log(this.cadEditar)
+    // console.log(this.cadEditar)
     if (this.index >= 0){
         this.cadastro.nome = this.arrCadastros[this.index].nome
         this.cadastro.idade = this.arrCadastros[this.index].idade

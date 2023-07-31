@@ -100,9 +100,10 @@ export default {
     },
     editar({cadastro}){
       this.$store.commit('editar_cadastro', cadastro)
-      // this.index = this.arrCadastro.indexOf(this.arrCadastro.find(arrcad => arrcad.id == cadastro.id))
-      // this.cadEditar = cadastro;
-      // this.incluir = true;       
+      // console.log(this.arrCadastro);
+      this.index = this.arrCadastro.indexOf(this.arrCadastro.find(arrcad => arrcad.id == cadastro.id))
+      this.cadEditar = cadastro;
+      this.incluir = true;       
       }, 
 
 
