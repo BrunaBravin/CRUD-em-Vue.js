@@ -27,7 +27,6 @@ import ListCadastro from "../components/ListCadastro.vue"
 import CadastroModal from "../components/CadastroModal.vue";
 import { useStore } from "vuex";
 import { computed } from "vue";
-// import { mapActions } from "vuex";
 
 export default {
   name: "Cadastros",
